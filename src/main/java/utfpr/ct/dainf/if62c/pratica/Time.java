@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  *
- * @author lucifersam
+ *
  */
 public class Time {
     private HashMap<String, Jogador> jogadores = new HashMap<>();

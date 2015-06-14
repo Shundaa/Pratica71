@@ -1,7 +1,7 @@
 package utfpr.ct.dainf.if62c.pratica;
 
 /**
- * @author lucifersam
+ * 
  */
 public class Jogador implements Comparable<Jogador> {
     int numero;

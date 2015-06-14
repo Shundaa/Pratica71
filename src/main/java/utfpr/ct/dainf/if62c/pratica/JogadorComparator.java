@@ -4,7 +4,7 @@ import java.util.Comparator;
 
 /**
  *
- * @author lucifersam
+ * 
  */
 public class JogadorComparator implements Comparator<Jogador> {
     
