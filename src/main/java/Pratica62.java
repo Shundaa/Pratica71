@@ -1,4 +1,5 @@
 
+import java.util.Collections;
 import java.util.Set;
 import utfpr.ct.dainf.if62c.pratica.Jogador;
 import utfpr.ct.dainf.if62c.pratica.JogadorComparator;
@@ -18,13 +19,19 @@ public class Pratica62 {
         Time alemanha;
         Set<String> posicoes;
         alemanha = new Time();
-        alemanha.addJogador("Goleiro", new Jogador(28, "Manuel Neuer"));
-        alemanha.addJogador("Zagueiro", new Jogador(4, "Benedikt Höwedes"));
-        alemanha.addJogador("Atacante", new Jogador(25, "Thomas Müller"));
-        alemanha.addJogador("Bicho", new Jogador(25, "Luiz"));
+        Jogador jogador1=new Jogador(28, "Manuel Neuer");
+        Jogador jogador2= new Jogador(4, "Benedikt Höwedes");
+        Jogador jogador3=new Jogador(25, "Thomas Müller");
+        Jogador jogador4=new Jogador(25, "Luiz");
+        alemanha.addJogador("Goleiro", jogador1);
+        alemanha.addJogador("Zagueiro", jogador2);
+        alemanha.addJogador("Atacante", jogador3);
+        alemanha.addJogador("Bicho", jogador4);
         alemanha.ordena(new JogadorComparator(false, true, false)).stream().forEach((j) -> {
             System.out.println(j);
         });
+        int index=Collections.binarySearch(alemanha.ordena(new JogadorComparator(false, true, false)),jogador4);
+        System.out.println(index);
     }
     
 }

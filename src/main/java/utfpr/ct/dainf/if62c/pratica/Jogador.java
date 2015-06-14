@@ -5,17 +5,6 @@ package utfpr.ct.dainf.if62c.pratica;
  */
 public class Jogador implements Comparable<Jogador> {    
 
-    public int getNumero() {
-        return numero;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
 
     public void setNumero(int numero) {
         this.numero = numero;
